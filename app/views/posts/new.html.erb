@@ -1,0 +1,11 @@
+<!--<form method="POST" action="/posts">-->
+<!--  <input name="title">-->
+<!--  <button type="submit">Save</button>-->
+<!--</form>-->
+
+<%= form_with url: "/posts", method: :post do |form| %>
+  <%= form.label :title, "Title:" %>
+  <%= form.text_field :title %>
+  <%= form.submit "Save" %>
+<% end %>
+
