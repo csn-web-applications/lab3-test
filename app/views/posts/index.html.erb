@@ -1,0 +1,36 @@
+<h1>Список постів</h1>
+
+
+<%#= @posts %>
+
+<%#= @posts[0].title %>
+
+<!--<ul>-->
+<!--  <li> Post 1</li>-->
+<!--  <li> Post 2</li>-->
+<!--  <li> Post 3</li>-->
+<!--</ul>-->
+
+<ul>
+  <% @posts.each do |post| %>
+<!--    <li>-->
+<!--      <a href="/posts/<%#= post.id %>">-->
+        <%#= post.title %>
+<!--      </a>-->
+<!--    </li>-->
+    <li>
+      <a href="<%= posts_path(post) %>">
+        <%= post.title %>
+      </a>
+    </li>
+  <% end %>
+</ul>
+
+
+<li>
+  <a href="/posts/1">
+    Post 1
+  </a>
+</li>
+
+
