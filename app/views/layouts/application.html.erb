@@ -14,6 +14,14 @@
     <p>Ваш профіль</p>
     <p>Новини</p>
 
+    <p class="text-red">
+      <%= flash[:error] %>
+    </p>
+
+    <p class="text-green">
+      <%= flash[:success] %>
+    </p>
+
     <%= yield %>
   </body>
 </html>
