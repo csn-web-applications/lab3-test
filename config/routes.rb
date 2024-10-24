@@ -13,5 +13,5 @@ Rails.application.routes.draw do
   # get '/posts', to: 'posts#index', as: :posts
   # get '/posts/new', to: 'posts#new', as: :new_post
   # get '/posts/:id', to: 'posts#show', as: :post
-  post '/posts/:id/approve', to: 'posts#approve', as: :approve_post
+  # post '/posts/:id/approve', to: 'posts#approve', as: :approve_post
 end
